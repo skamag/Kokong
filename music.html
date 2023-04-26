@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skateboarding</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-section{
+            width: 100%;
+        }
+        .gallery-images{
+            position: absolute;
+            width: 80%;
+            left: 50%;
+            top: 50%;
+            -ms-transform: translateY(-50%, -50%);
+            transform: translate(-50%, -50%);
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 20px;
+        }
+        .gallery{
+            width: 100%;
+            position: relative;
+        }
+        .image-section{
+            width: 100%;
+            height: 300px;
+        }
+        .image-section img{
+            height: 300px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            cursor: pointer;
+            background-color: white;
+            position: absolute;
+            z-index: 1;
+        }
+        img:hover{
+            opacity: 0.5;
+            z-index: -1;
+        }
+        .animalkingdombox{
+            width:70%;
+            margin-left:15%;
+            margin-right: 15%;
+        }
+        .musicdescription{
+            font-size: small;
+            text-align: center;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 10%;
+        }
+        .textboxmusic{
+            position: absolute;
+            top: 50%;
+            transform: translate(-0%, -50%);
+        }
+        .smaller{
+            margin-top: 10px;
+        }
+        .caption:hover{
+            opacity: 1;
+        }
+        .tablesBox{
+            position: relative;
+        }
+        iframe{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 300px;
+            opacity: 0;
+            margin-top: -26px;
+        }
+        iframe:hover{
+            z-index: 1;
+            opacity: 1;
+        }
+        @media screen and (max-width: 768px){
+            .textboxmusic{
+                position: relative;
+                transform: translate(-0%, -0%);
+            }
+            .gallery-images{
+                grid-template-columns: repeat(1,1fr);
+                position: absolute;
+                width: 80%;
+                left: 50%;
+                top: 15vh;
+                -ms-transform: translateY(-50%, -0%);
+                transform: translate(-50%, -0%);
+                display: grid;
+                grid-gap: 20px;
+            }
+            .musicbox{
+                padding-bottom: 70px;
+                padding-top: 0px;
+            }
+            .musicdescription{
+                margin-top: 0px;
+                margin-bottom: 30px;
+            }
+        }
+        @media screen and (max-width: 568px){
+            .textboxmusic{
+                position: relative;
+                transform: translate(-0%, -0%);
+            }
+            .gallery-images{
+                grid-template-columns: 1fr;
+                
+            }
+            .musicdescription{
+                margin-top: 0px;
+            }
+            .animalkingdombox{
+                width:100%;
+                margin-left:0%;
+                margin-right: 0%;
+            }
+            .animalkingdombox img{
+                position: relative;
+            }
+            .animalkingdombox img:hover{
+                opacity: 1;
+                z-index: 1;
+            }
+            iframe{
+                position: relative;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                opacity: 1;
+                z-index: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <!--<a href="index.html" style="text-decoration: none; color: black;">Kokong</a>-->
+            <a href="index.html"><img class="logoImg" src="bilder/Logo/logoImgRedesign2.png" alt=""></a>
+        </div>
+        <ul class="navLinks">
+            <li><a href="about.html">About</a></li>
+            <li><a href="art.html">Drawings & Paintings</a></li>
+            <li><a href="photo.html">Photography</a></li>
+            <li class="activeNavLink"><a href="music.html">Music</a></li>
+            <li><a href="skate.html">Skateboarding</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav> 
+    <div class="musicbox">
+        <!--<h3 class="pageTitle"></h3>-->
+        <div class="gallery-section">
+            <div class="gallery-wrap">
+                <div class="gallery-images">
+                    <div class="gallery">
+                        <div class="musicdescription">
+                            <div class="textboxmusic">
+                                <h3>Animal Kingdom</h3>
+                                <br>
+                                <p>
+                                    Crispy Carrot is a musical experiment existing in a psychedelic ambient-acoustic universe with influences 
+                                    from genres like folk, rock, soul, jazz, reggae and many other sorts of music.
+                                    <br><br>
+                                    All songs are written, recorded and mixed by Kjetil Skaro at beautiful Nesodden, Norway.
+                                    Mastered by Njål Frode Lie, NFL Productions at Hydroparken Studios, Notodden. Artwork by Kjetil Skaro.
+                                    Special thanks to Viktor Skårnes playing the drums on "Superman" and bass-guitar on "Frostnatt".
+                                    Also a huge thanks to friends and family. Love you all.
+                                    <br><br>
+                                    Crispy Carrot Music 2019
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <div class="image-section">
+                            <div class="animalkingdombox">
+                                <!--img src="bilder/Music/animalKingdom.jpg" onclick="window.open(this.src)"-->
+                                <img src="bilder/Music/animalKingdom.jpg">
+                            </div>
+                            <iframe style="border-radius:0px" src="https://open.spotify.com/embed/album/2Xu3JmtDWKU4RlRNpCjv4u?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                        <div class="caption"></div>
+                    
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

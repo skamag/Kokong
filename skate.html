@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skateboarding</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .skateSection2{
+            background-color: rgb(230, 230, 230);
+            margin-top: 70px;
+            padding-bottom: 70px;
+        }
+        .skateSection3{
+            padding-bottom: 70px;
+            padding-top: 10px;
+        }
+        .pageTitle2{
+            text-align: center;
+            padding-top: 60px;
+        }
+        .gallery-section{
+            width: 100%;
+        }
+        .gallery-wrap{
+            padding-top: 10px;
+        }
+        .gallery-images{
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 20px;
+        }
+        #gallery-images2{
+            grid-template-columns: repeat(3,1fr);
+        }
+        .gallery{
+            width: 100%;
+            position: relative;
+        }
+        .image-section{
+            width: 100%;
+        }
+        .image-section img{
+            width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 5px;
+            display: block;
+            cursor: pointer;
+        }
+        .image-section .slideguitarBox{
+            width:70%;
+            margin-left:15%;
+            margin-right: 15%;
+            
+        }
+        /*
+        .caption{
+            width: 100%;
+            height: 25%;
+            margin-top: 20.4%;
+            position: absolute;
+            padding: 15px;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.30s;
+        }*/
+        .skateDescription{
+            font-size: small;
+            margin-top: 5%;
+            /*margin-top: 20.4%;*/
+            text-align: center;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 23%;
+        }
+        .skateDescription3{
+            font-size: small;
+            text-align: center;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-top: 20%;
+        }
+        .smaller{
+            margin-top: 10px;
+        }
+        .caption:hover{
+            opacity: 1;
+        }
+        .tablesBox{
+            position: relative;
+        }
+        .leftBtn, .rightBtn{
+            position: absolute;
+            top: 40%;
+            height: 20%;
+            width: 5%;
+            z-index: 1;
+        }
+        .leftBtn{
+            left: 0;
+        }
+        .rightBtn{
+            right: 0;
+        }
+        @media screen and (max-width: 992px){
+            .gallery-section .gallery-wrap .gallery-images{
+                grid-template-columns: repeat(1,1fr);
+            }
+            .skateDescription{
+                margin-top: 0px;
+            }
+            #gallery-images2{
+                grid-template-columns: repeat(2,1fr);
+            }
+            .skateSection3{
+                padding-bottom: 70px;
+                padding-top: 0px;
+            }
+            .skateDescription3{
+                margin-top: 0px;
+            }
+        }
+        @media screen and (max-width: 568px){
+            .gallery-section .gallery-wrap .gallery-images{
+                grid-template-columns: 1fr;
+            }
+            .skateDescription{
+                margin-top: 0px;
+            }
+            .skateDescription3{
+                margin-top: 0px;
+            }
+            .leftBtn, .rightBtn{
+                width: 12%;
+            }
+            #gallery-images2{
+                grid-template-columns: repeat(1,1fr);
+            }
+            .image-section .slideguitarBox{
+                width:100%;
+                margin-left:0%;
+                margin-right: 0%;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <!--<a href="index.html" style="text-decoration: none; color: black;">Kokong</a>-->
+            <a href="index.html"><img class="logoImg" src="bilder/Logo/logoImgRedesign2.png" alt=""></a>
+        </div>
+        <ul class="navLinks">
+            <li><a href="about.html">About</a></li>
+            <li><a href="art.html">Drawings & Paintings</a></li>
+            <li><a href="photo.html">Photography</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li class="activeNavLink"><a href="skate.html">Skateboarding</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="skateSection1">
+        <!--<h3 class="pageTitle"></h3>-->
+        <div class="gallery-section">
+            <div class="gallery-wrap">
+                <div class="gallery-images">
+                    <div class="gallery">
+                        <div class="skateDescription">
+                            <!--<p>(Norwegian)</p>
+                            <br>
+                            <h3>Skate-bordet</h3>
+                            <br>
+                            <p>
+                                Verket er laget for å illustrere hvordan skateboarding har evnen til å åpne mennesker 
+                                for nye perspektiver og tanker om verden som omgir dem. Det er også et uttrykk for samhold 
+                                og felleskap. Bordet er et sted å møtes, uansett hvem du er. 
+                            </p>
+                            <br><br><br>
+                            <p>(English)</p>-->
+                            
+                            <h3>The Skate Table</h3>
+                            <br>
+                            <p>
+                                The art piece is created to illustrate how skateboarding has the ability to open up
+                                people to new perspectives and thougts about our world. It is 
+                                also an expression of community and togetherness. The table is a place where people
+                                meet, and everyone is welcome.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <div class="image-section">
+                            <div class="tablesBox">
+                                <img class="mySlides" src="bilder/Skate/skatebord1Vinkel1Small.jpg" style="width:100%" onclick="window.open(this.src)">
+                                <img class="mySlides" src="bilder/Skate/Skatebord1Vinkel2Small.jpg" style="width:100%" onclick="window.open(this.src)">
+                            
+                                <button class="leftBtn" onclick="plusDivs(-1)">&#10094;</button>
+                                <button class="rightBtn" onclick="plusDivs(1)">&#10095;</button>
+                            </div>
+                        </div>
+                        <div class="caption"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="skateSection2">
+        <h3 class="pageTitle2">Painted Skateboard Graphics</h3>
+        <div class="gallery-section">
+            <div class="gallery-wrap">
+                <div class="gallery-images" id="gallery-images2">
+                    <div class="gallery">
+                        <div class="image-section">
+                            <img id="image" src="bilder/Skate/Skateboard1Small.jpg" onclick="window.open(this.src)">
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <div class="image-section">
+                            <img id="image" class="slideguitar" src="bilder/Skate/Skateboard2Small.jpg" onclick="window.open(this.src)">
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <div class="image-section">
+                            <img id="image" class="slideguitar" src="bilder/Skate/Skateboard3Small.jpg" onclick="window.open(this.src)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="skateSection3">
+        <!--<h3 class="pageTitle"></h3>-->
+        <div class="gallery-section">
+            <div class="gallery-wrap">
+                <div class="gallery-images">
+                    <div class="gallery">
+                        <div class="skateDescription3">
+                            
+                            <h3>The Powerslide</h3>
+                            <br>
+                            <p>
+                                A project that combines art and engineering. Made from an old skateboard, the slide guitar is fully functional with tuning keys and electronics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <div class="image-section">
+                            <div class="slideguitarBox">
+                                <img src="bilder/Skate/slideskateBoth.jpg" onclick="window.open(this.src)">
+                            
+                            </div>
+                        </div>
+                        <div class="caption"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
