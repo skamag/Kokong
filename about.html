@@ -5,105 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skateboarding</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .gallery-section{
-            width: 100%;
-        }
-        .gallery-wrap{
-            padding-top: 10px;
-        }
-        .gallery-images{
-            width: 80%;
-            margin: 0 auto;
-            margin-top: 100px;
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-gap: 20px;
-            background-color: rgb(39, 39, 39);
-        }
-        .gallery{
-            width: 100%;
-            position: relative;
-        }
-        .image-section{
-            width: 100%;
-        }
-        .image-section img{
-            width: 100%;
-            height: auto;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            padding: 5px;
-            display: block;
-            cursor: pointer;
-        }
-        .noHover{
-            pointer-events: none;
-        }
-        .description{
-            font-size: small;
-            margin-top: 4vw;
-            /*margin-top: 20.4%;*/
-            text-align: center;
-            margin-right: 5%;
-            margin-left: 5%;
-            margin-bottom: 5%;
-            color: white;
-        }
-        .smaller{
-            font-size: smaller;
-            margin-top: 10px;
-        }
-        .caption:hover{
-            opacity: 1;
-        }
-        .tablesBox{
-            position: relative;
-        }
-        @media screen and (max-width: 992px){
-            .gallery-images{
-                grid-template-columns: 1fr;
-                margin-top: 10px;
-            }
-        }
-        @media screen and (max-width: 568px){
-            .gallery-images{
-                grid-template-columns: 1fr;
-            }
-            .description{
-                margin-top: 0px;
-                margin-bottom: 30px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/about.css">
 </head>
 <body>
     <nav>
         <div class="logo">
             <!--<a href="index.html" style="text-decoration: none; color: black;">Kokong</a>-->
-            <a href="index.html"><img class="logoImg" src="bilder/Logo/logoImgRedesign2.png" alt=""></a>
+            <a href="index.html"><img class="logoImg" src="./images/Logo/logoImgRedesign2.png" alt=""></a>
         </div>
         <ul class="navLinks">
-            <li class="activeNavLink"><a href="about.html">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="art.html">Drawings & Paintings</a></li>
             <li><a href="photo.html">Photography</a></li>
             <li><a href="music.html">Music</a></li>
             <li><a href="skate.html">Skateboarding</a></li>
             <li><a href="shop.html">Shop</a></li>
         </ul>
-        <div class="burger">
+        <div class="burger" onclick="burgerClick()">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
     </nav>
+    <!-- <div id="placeholder"></div> -->
     <div class="gallery-section">
         <div class="gallery-wrap">
             <div class="gallery-images">
                 <div class="gallery">
                     <div class="image-section">
                         <div class="aboutImgBox">
-                            <img src="bilder/About/kjetilsPic.jpg" alt="" class="noHover">
+                            <img src="./images/About/kjetilsPic.jpg" alt="" class="noHover">
                         </div>
                     </div>
                     <div class="caption"></div>
@@ -130,6 +62,12 @@
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script>
+        $(function(){
+            $("#placeholder").load("navbar.html");
+        });
+    </script> -->
+    <script src="./app.js"></script>
 </body>
 </html>

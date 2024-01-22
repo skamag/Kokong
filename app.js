@@ -1,21 +1,24 @@
-const navSlide =()=>{
-    const burger = document.querySelector('.burger');
-    const nav=document.querySelector('.navLinks');
-    const navLinks=document.querySelectorAll('.navLinks li');
+let isToggle = false
 
-    burger.addEventListener('click',()=>{
-        nav.classList.toggle('nav-active');
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.navLinks');
+const navLinks = document.querySelectorAll('.navLinks li');
 
-        navLinks.forEach((link, index)=>{
-            if(link.style.animation){
-                link.style.animation='';
-                
-            } else {
-                link.style.animation='navLinkFade 1.5s ease forwards';
-            }
-        });
-        burger.classList.toggle('toggle');
+burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+
+    if(!isToggle) { 
+        isToggle = true
+    } else {
+        isToggle = false
+    }
+
+    navLinks.forEach((link)=>{
+        if(link.style.animation){
+            link.style.animation = '';
+        } else {
+            link.style.animation = 'navLinkFade 1.5s ease forwards';
+        }
     });
-
-}
-navSlide();
+    burger.classList.toggle('toggle');
+});

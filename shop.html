@@ -5,88 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .shopIngress{
-            text-align: center;
-        }
-        .gallery-section{
-            width: 100%;
-        }
-        .gallery-wrap{
-            padding-top: 10px;
-        }
-        .gallery-images{
-            width: 80%;
-            margin: 0 auto;
-            padding-top: 50px;
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            grid-gap: 20px;
-        }
-        .gallery{
-            width: 100%;
-            position: relative;
-        }
-        .image-section{
-            width: 100%;
-        }
-        .image-section img{
-            width: 100%;
-            height: auto;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            padding: 5px;
-            display: block;
-            cursor: pointer;
-        }
-        /*
-        .caption{
-            width: 100%;
-            height: 25%;
-            margin-top: 20.4%;
-            position: absolute;
-            padding: 15px;
-            top: 0;
-            left: 0;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-direction: column;
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            opacity: 0;
-            transition: opacity 0.30s;
-        }*/
-        .smaller{
-            font-size: smaller;
-            margin-top: 10px;
-        }
-        .caption:hover{
-            opacity: 1;
-        }
-        @media screen and (max-width: 992px){
-            .gallery-section .gallery-wrap .gallery-images{
-                grid-template-columns: repeat(2,1fr);
-            }
-        }
-        @media screen and (max-width: 568px){
-            .gallery-section .gallery-wrap .gallery-images{
-                grid-template-columns: 1fr;
-            }
-            .shopIngress{
-                margin-left: 12%;
-                margin-right: 12%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/shop.css">
 </head>
 <body>
     <nav>
         <div class="logo">
             <!--<a href="index.html" style="text-decoration: none; color: black;">Kokong</a>-->
-            <a href="index.html"><img class="logoImg" src="bilder/Logo/logoImgRedesign2.png" alt=""></a>
+            <a href="index.html"><img class="logoImg" src="./images/Logo/logoImgRedesign2.png" alt=""></a>
         </div>
         <ul class="navLinks">
             <li><a href="about.html">About</a></li>
@@ -94,14 +20,15 @@
             <li><a href="photo.html">Photography</a></li>
             <li><a href="music.html">Music</a></li>
             <li><a href="skate.html">Skateboarding</a></li>
-            <li class="activeNavLink"><a href="shop.html">Shop</a></li>
+            <li><a href="shop.html">Shop</a></li>
         </ul>
-        <div class="burger">
+        <div class="burger" onclick="burgerClick()">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
     </nav>
+    <!-- <div id="placeholder"></div> -->
     <h3 class="pageTitle"></h3>
     <br>
     <p class="shopIngress">If you find something that you would like to purchase, please contact me at kjetilskaro@gmail.com.</p>
@@ -110,7 +37,7 @@
             <div class="gallery-images">
                 <div class="gallery">
                     <!--<div class="image-section">
-                        <img id="image" src="bilder/animalKingdom.jpg" onclick="window.open(this.src)">
+                        <img id="image" src="./images/animalKingdom.jpg" onclick="window.open(this.src)">
                     </div>
                     <div class="caption">
                         <h3>Animal Kingdom LP</h3>
@@ -119,7 +46,7 @@
                 </div>
                 <div class="gallery">
                     <div class="image-section">
-                        <img id="image" src="bilder/Shop/CCAKForsideMedVinylSmall.jpg" onclick="window.open(this.src)">
+                        <img id="image" src="./images/Shop/CCAKForsideMedVinylSmall.jpg" onclick="window.open(this.src)">
                     </div>
                     <div class="caption">
                         
@@ -138,7 +65,7 @@
                 </div>
                 <div class="gallery">
                     <!--<div class="image-section">
-                        <img id="image" src="bilder/blank.png" onclick="window.open(this.src)">
+                        <img id="image" src="./images/blank.png" onclick="window.open(this.src)">
                     </div>
                     <div class="caption">
                         <h3>Image one</h3>
@@ -147,17 +74,7 @@
                 </div>
                 <div class="gallery">
                     <!--<div class="image-section">
-                        <img id="image" src="bilder/blank.png" onclick="window.open(this.src)">
-                    </div>
-                    <div class="caption">
-                        <h3>Image one</h3>
-                        <p>Lorem ipsum</p>
-                    </div>-->
-                    
-                </div>
-                <div class="gallery">
-                    <!--<div class="image-section">
-                        <img id="image" src="bilder/blank.png" onclick="window.open(this.src)">
+                        <img id="image" src="./images/blank.png" onclick="window.open(this.src)">
                     </div>
                     <div class="caption">
                         <h3>Image one</h3>
@@ -167,7 +84,17 @@
                 </div>
                 <div class="gallery">
                     <!--<div class="image-section">
-                        <img id="image" src="bilder/blank.png" onclick="window.open(this.src)">
+                        <img id="image" src="./images/blank.png" onclick="window.open(this.src)">
+                    </div>
+                    <div class="caption">
+                        <h3>Image one</h3>
+                        <p>Lorem ipsum</p>
+                    </div>-->
+                    
+                </div>
+                <div class="gallery">
+                    <!--<div class="image-section">
+                        <img id="image" src="./images/blank.png" onclick="window.open(this.src)">
                     </div>
                     <div class="caption">
                         <h3>Image one</h3>
@@ -177,6 +104,12 @@
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script>
+        $(function(){
+            $("#placeholder").load("navbar.html");
+        });
+    </script> -->
+    <script src="./app.js"></script>
 </body>
 </html>

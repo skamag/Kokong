@@ -2,30 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/global.css">
     <style>
         body{
-            animation: changeBg 6s infinite;
+            background-image: url(../images/Photos/Digital/BeskyttendeSmall.jpg);
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: 50% 100%;
-            background-size: 100%;
+            background-size: 100vw auto;
         }
         @keyframes changeBg{
-            0%,100%  {background-image: url(bilder/Photos/Digital/BeskyttendeSmall.jpg);}
-            50% {background-image: url(bilder/Photos/Digital/SkuddsoneSmall.jpg);}
-        }
-        .box{
-            height: 100px;
-            width: 100px;
-            background-color: pink;
+            0%,100%  {background-image: url(../images/Photos/Digital/BeskyttendeSmall.jpg);}
+            15%  {background-image: url(../images/Photos/Digital/BeskyttendeSmall.jpg);}
+            25% {background-image: url(../images/Photos/Digital/JosteinSmall.jpg);}
+            40% {background-image: url(../images/Photos/Digital/JosteinSmall.jpg);}
+            50% {background-image: url(../images/Photos/Digital/SkuddsoneSmall.jpg);}
+            65% {background-image: url(../images/Photos/Digital/SkuddsoneSmall.jpg);}
+            75% {background-image: url(../images/Photos/Digital/PerlemorSmall.jpg);}
+            90% {background-image: url(../images/Photos/Digital/PerlemorSmall.jpg);}
         }
     </style>
 </head>
 <body>
-    <div class="box"></div>
-    <p>Hei</p>
+    <div id="placeholder"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>

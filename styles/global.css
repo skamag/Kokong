@@ -106,13 +106,13 @@ img:hover{
 }
 .nav-active{
     transform: translateX(0%);
-    width: 66%;
+    width: 50%;
     opacity: 1;
-    -moz-transition: all 0.75s ease-out;  /* FF4+ */
+    /*-moz-transition: all 0.75s ease-out;  /* FF4+ */
     -o-transition: all 0.75s ease-out;  /* Opera 10.5+ */
     -webkit-transition: all 0.75s ease-out;  /* Saf3.2+, Chrome */
     -ms-transition: all 0.75s ease-out;  /* IE10? */
-    transition: all 0.75s ease-out;  
+    transition: all 0.75s ease-out;
 }
 @keyframes navLinkFade{
     from{
