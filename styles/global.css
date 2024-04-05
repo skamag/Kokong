@@ -82,7 +82,7 @@ img:hover{
         overflow-x: hidden;
     }
     .navLinks{
-        position: fixed;
+        position: absolute;
         right: 0;
         height: 100vh;
         top: 8vh;
