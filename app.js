@@ -3,9 +3,14 @@ let isToggle = false
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.navLinks');
 const navLinks = document.querySelectorAll('.navLinks li');
+const navText = document.querySelectorAll('.navLinks li a');
 
 burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
+    
+    navText.forEach((text)=>{
+        text.classList.toggle('.disBlock');
+    })
 
     if(!isToggle) { 
         isToggle = true
@@ -20,5 +25,6 @@ burger.addEventListener('click', () => {
             link.style.animation = 'navLinkFade 1.5s ease forwards';
         }
     });
+
     burger.classList.toggle('toggle');
 });

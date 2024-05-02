@@ -82,7 +82,7 @@ img:hover{
         overflow-x: hidden;
     }
     .navLinks{
-        position: absolute;
+        position: fixed;
         right: 0;
         height: 100vh;
         top: 8vh;
@@ -105,7 +105,9 @@ img:hover{
     }
     .navLinks li{
         opacity: 1;
-        
+    }
+    .navLinks li a{
+        display: block;
     }
     .burger{
         display:block;
@@ -124,10 +126,12 @@ img:hover{
 @keyframes navLinkFade{
     from{
         opacity: 0;
+        visibility: hidden;
         transform:translateX(200px)
     }
     to{
         opacity: 1;
+        visibility: visible;
         transform: translateX(0px);
     }
 }
