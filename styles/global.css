@@ -74,6 +74,20 @@ img:hover{
     margin: 5px;
     transition: all 0.3s ease;
 }
+.headerSection{
+    padding-bottom: 70px;
+}
+.pageTitle{
+    text-align: left;
+    padding: 50px 10% 0 10%;
+    font-size: 50px;
+}
+.pageIngress{
+    margin: 10px 10% 0 10%;
+}
+.centerText{
+    text-align: center;
+}
 @media screen and (max-width:1536px){
     .navLinks a{
         font-size: 12px;
@@ -121,6 +135,14 @@ img:hover{
         display:block;
         z-index: 99;
     }
+    .pageTitle{
+        text-align: center;
+        padding: 50px 10% 0 10%;
+        font-size: 30px;
+    }
+    .pageIngress{
+        text-align: center;
+    }
 }
 .nav-active{
     transform: translateX(0%);
@@ -152,8 +174,4 @@ img:hover{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
-}
-.pageTitle{
-    text-align: center;
-    margin-top: 50px;
 }

@@ -1,5 +1,7 @@
 .gallery-section{
     width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .gallery-wrap{
     padding-top: 10px;
@@ -7,7 +9,6 @@
 .gallery-images{
     width: 80%;
     margin: 0 auto;
-    margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 20px;
@@ -33,13 +34,16 @@
 }
 .description{
     font-size: small;
-    margin-top: 4vw;
     /*margin-top: 20.4%;*/
     text-align: center;
     margin-right: 5%;
     margin-left: 5%;
     margin-bottom: 5%;
     color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .smaller{
     font-size: smaller;

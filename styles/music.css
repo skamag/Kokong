@@ -1,13 +1,12 @@
 .gallery-section{
     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(230, 230, 230);
 }
 .gallery-images{
-    position: absolute;
     width: 80%;
-    left: 50%;
-    top: 50%;
-    -ms-transform: translateY(-50%, -50%);
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 20px;
@@ -79,12 +78,7 @@ iframe:hover{
     }
     .gallery-images{
         grid-template-columns: repeat(1,1fr);
-        position: absolute;
         width: 80%;
-        left: 50%;
-        top: 15vh;
-        -ms-transform: translateY(-50%, -0%);
-        transform: translate(-50%, -0%);
         display: grid;
         grid-gap: 20px;
     }

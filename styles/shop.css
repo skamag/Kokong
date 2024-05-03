@@ -3,6 +3,8 @@
 }
 .gallery-section{
     width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding-bottom: 50px;
 }
 .gallery-wrap{
     padding-top: 10px;
