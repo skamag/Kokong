@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="./images/iconBlack.png"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="./images/iconBlack.png" />
     <title>Skateboarding</title>
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/skate.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/skate.css" />
+  </head>
+  <body>
     <nav>
-        <div class="logo">
-            <!--<a href="index.html" style="text-decoration: none; color: black;">Kokong</a>-->
-            <a href="index.html"><img class="logoImg" src="./images/Logo/logoImgRedesign2.png" alt=""></a>
-        </div>
-        <ul class="navLinks">
-            <li><a href="about.html">About</a></li>
-            <li><a href="art.html">Drawings & Paintings</a></li>
-            <li><a href="photo.html">Photography</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a class="activeNavLink" href="skate.html">Skateboarding</a></li>
-            <li><a href="shop.html">Shop</a></li>
-        </ul>
-        <div class="burger" onclick="burgerClick()">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+      <div class="logo">
+        <!--<a href="index.html" style="text-decoration: none; color: black;">Kokong</a>-->
+        <a href="index.html"
+          ><img class="logoImg" src="./images/Logo/logoImgRedesign2.png" alt=""
+        /></a>
+      </div>
+      <ul class="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="art.html">Drawings & Paintings</a></li>
+        <li><a href="photo.html">Photography</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a class="activeNavLink" href="skate.html">Skateboarding</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+      <div class="burger" onclick="burgerClick()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
     <!-- <div id="placeholder"></div> -->
     <main>
-        <section class="headerSection">
-            <h3 class="pageTitle">Skateboarding</h3>
-            <p class="pageIngress">Skate related art pieces and other stuff</p>
-        </section>
-        <section class="skateSection1">
-            <!--<h3 class="pageTitle"></h3>-->
-            <div class="gallery-section">
-                <div class="gallery-wrap">
-                    <div class="gallery-images">
-                        <div class="gallery">
-                            <div class="skateDescription">
-                                <!--<p>(Norwegian)</p>
+      <section class="headerSection">
+        <h3 class="pageTitle">Skateboarding</h3>
+        <p class="pageIngress">Skate related art pieces and other stuff</p>
+      </section>
+      <section class="skateSection1">
+        <!--<h3 class="pageTitle"></h3>-->
+        <div class="gallery-section">
+          <div class="gallery-wrap">
+            <div class="gallery-images">
+              <div class="gallery">
+                <div class="skateDescription">
+                  <!--<p>(Norwegian)</p>
                                 <br>
                                 <h3>Skate-bordet</h3>
                                 <br>
@@ -53,85 +55,121 @@
                                 </p>
                                 <br><br><br>
                                 <p>(English)</p>-->
-                                
-                                <h3>The Skate Table</h3>
-                                <br>
-                                <p>
-                                    The art piece is created to illustrate how skateboarding has the ability to open up
-                                    people to new perspectives and thougts about our world. It is 
-                                    also an expression of community and togetherness. The table is a place where people
-                                    meet, and everyone is welcome.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <div class="image-section">
-                                <div class="tablesBox">
-                                    <img class="mySlides" src="./images/Skate/skatebord1Vinkel1Small.jpg" style="width:100%" onclick="window.open(this.src)">
-                                    <img class="mySlides" src="./images/Skate/Skatebord1Vinkel2Small.jpg" style="width:100%" onclick="window.open(this.src)">
-                                
-                                    <button class="leftBtn" onclick="plusDivs(-1)">&#10094;</button>
-                                    <button class="rightBtn" onclick="plusDivs(1)">&#10095;</button>
-                                </div>
-                            </div>
-                            <div class="caption"></div>
-                        </div>
-                    </div>
+
+                  <h3>The Skate Table</h3>
+                  <br />
+                  <p>
+                    The art piece is created to illustrate how skateboarding has
+                    the ability to open up people to new perspectives and
+                    thougts about our world. It is also an expression of
+                    community and togetherness. The table is a place where
+                    people meet, and everyone is welcome.
+                  </p>
                 </div>
-            </div>
-        </section>
-        <section class="skateSection2">
-            <h3 class="pageTitle2">Painted Skateboard Graphics</h3>
-            <div class="gallery-section">
-                <div class="gallery-wrap">
-                    <div class="gallery-images" id="gallery-images2">
-                        <div class="gallery">
-                            <div class="image-section">
-                                <img id="image" src="./images/Skate/Skateboard1Small.jpg" onclick="window.open(this.src)">
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <div class="image-section">
-                                <img id="image" class="slideguitar" src="./images/Skate/Skateboard2Small.jpg" onclick="window.open(this.src)">
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <div class="image-section">
-                                <img id="image" class="slideguitar" src="./images/Skate/Skateboard3Small.jpg" onclick="window.open(this.src)">
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="gallery">
+                <div class="image-section">
+                  <div class="tablesBox">
+                    <img
+                      class="mySlides"
+                      src="./images/Skate/skatebord1Vinkel1Small.jpg"
+                      style="width: 100%"
+                      onclick="window.open(this.src)"
+                    />
+                    <img
+                      class="mySlides"
+                      src="./images/Skate/Skatebord1Vinkel2Small.jpg"
+                      style="width: 100%"
+                      onclick="window.open(this.src)"
+                    />
+
+                    <button class="leftBtn" onclick="plusDivs(-1)">
+                      &#10094;
+                    </button>
+                    <button class="rightBtn" onclick="plusDivs(1)">
+                      &#10095;
+                    </button>
+                  </div>
                 </div>
+                <div class="caption"></div>
+              </div>
             </div>
-        </section>
-        <section class="skateSection3">
-            <!--<h3 class="pageTitle"></h3>-->
-            <div class="gallery-section">
-                <div class="gallery-wrap">
-                    <div class="gallery-images">
-                        <div class="gallery">
-                            <div class="skateDescription3">
-                                
-                                <h3>The Powerslide</h3>
-                                <br>
-                                <p>
-                                    A project that combines art and engineering. Made from an old skateboard, the slide guitar is fully functional with tuning keys and electronics.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="gallery">
-                            <div class="image-section">
-                                <div class="slideguitarBox">
-                                    <img src="./images/Skate/slideskateBoth.jpg" onclick="window.open(this.src)">
-                                
-                                </div>
-                            </div>
-                            <div class="caption"></div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section class="skateSection2">
+        <h3 class="pageTitle2">Painted Skateboard Graphics</h3>
+        <div class="gallery-section">
+          <div class="gallery-wrap">
+            <div class="gallery-images" id="gallery-images2">
+              <div class="gallery">
+                <div class="image-section">
+                  <img
+                    id="image"
+                    src="./images/Skate/Skateboard1Small.jpg"
+                    onclick="window.open(this.src)"
+                    loading="lazy"
+                  />
                 </div>
+              </div>
+              <div class="gallery">
+                <div class="image-section">
+                  <img
+                    id="image"
+                    class="slideguitar"
+                    src="./images/Skate/Skateboard2Small.jpg"
+                    onclick="window.open(this.src)"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="gallery">
+                <div class="image-section">
+                  <img
+                    id="image"
+                    class="slideguitar"
+                    src="./images/Skate/Skateboard3Small.jpg"
+                    onclick="window.open(this.src)"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section class="skateSection3">
+        <!--<h3 class="pageTitle"></h3>-->
+        <div class="gallery-section">
+          <div class="gallery-wrap">
+            <div class="gallery-images">
+              <div class="gallery">
+                <div class="skateDescription3">
+                  <h3>The Powerslide</h3>
+                  <br />
+                  <p>
+                    A project that combines art and engineering. Made from an
+                    old skateboard, the slide guitar is fully functional with
+                    tuning keys and electronics.
+                  </p>
+                </div>
+              </div>
+              <div class="gallery">
+                <div class="image-section">
+                  <div class="slideguitarBox">
+                    <img
+                      src="./images/Skate/slideskateBoth.jpg"
+                      onclick="window.open(this.src)"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="caption"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./skate-slideshow.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -141,5 +179,5 @@
         });
     </script> -->
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>

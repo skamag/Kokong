@@ -1,168 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="./images/iconBlack.png"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="./images/iconBlack.png" />
     <title>photography</title>
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/photo.css">
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/photo.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <div class="logo">
-            <!--<a href="index.html" style="text-decoration: none; color: black;">Kokong</a>-->
-            <a href="index.html"><img class="logoImg" src="./images/Logo/logoImgRedesign2.png" alt=""></a>
-        </div>
-        <ul class="navLinks">
-            <li><a href="about.html">About</a></li>
-            <li><a href="art.html">Drawings & Paintings</a></li>
-            <li><a class="activeNavLink" href="photo.html">Photography</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="skate.html">Skateboarding</a></li>
-            <li><a href="shop.html">Shop</a></li>
-        </ul>
-        <div class="burger" onclick="burgerClick()">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+      <div class="logo">
+        <!--<a href="index.html" style="text-decoration: none; color: black;">Kokong</a>-->
+        <a href="index.html"
+          ><img class="logoImg" src="./images/Logo/logoImgRedesign2.png" alt=""
+        /></a>
+      </div>
+      <ul class="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="art.html">Drawings & Paintings</a></li>
+        <li><a class="activeNavLink" href="photo.html">Photography</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="skate.html">Skateboarding</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+      <div class="burger" onclick="burgerClick()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
     <!-- <div id="placeholder"></div> -->
     <main class="gallery-section">
-        <h3 class="pageTitle">Photography</h3>
-        <p class="pageIngress">Click to open the photo in a new tab</p>
-        <div class="gallery-wrap">
-            <div class="gallery-images">
-                <div class="gallery">
-                    <div class="image-section">
-                        <img id="image" src="./images/Photos/Digital/PerlemorSmall.jpg" title="&quot;Perlemor&quot;" onclick="window.open(this.src)">
-                        <img id="image" src="../images/Photos/Digital/IndustriellSmall.jpg" title="&quot;Industriell&quot;" onclick="window.open(this.src)">
+      <h3 class="pageTitle">Photography</h3>
+      <p class="pageIngress">Click to open the photo in a new tab</p>
+      <div class="gallery-wrap">
+        <div class="gallery-images">
+          <div class="gallery">
+            <div class="image-section">
+              <img
+                id="image"
+                src="./images/Photos/Digital/PerlemorSmall.jpg"
+                title='"Perlemor"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+              <img
+                id="image"
+                src="../images/Photos/Digital/IndustriellSmall.jpg"
+                title='"Industriell"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
 
-                        <img id="image" src="./images/Photos/Digital/Stjernegata1.jpg" title="&quot;Stjernegata #1&quot;" onclick="window.open(this.src)">
-                        <img id="image" src="./images/Photos/Digital/KrystallklartSmall.jpg" title="&quot;Krystallklart&quot;" onclick="window.open(this.src)">
-                        <img id="image" src="./images/Photos/Digital/JosteinSmall.jpg" title="&quot;Jostein bw&quot;" onclick="window.open(this.src)">
-
-                    </div>
-                    <!--<div class="caption">
+              <img
+                id="image"
+                src="./images/Photos/Digital/Stjernegata1.jpg"
+                title='"Stjernegata #1"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+              <img
+                id="image"
+                src="./images/Photos/Digital/KrystallklartSmall.jpg"
+                title='"Krystallklart"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+              <img
+                id="image"
+                src="./images/Photos/Digital/JosteinSmall.jpg"
+                title='"Jostein bw"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+            </div>
+            <!--<div class="caption">
                         <p>"Ryggstøtte"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                        <img id="image" src="./images/Photos/Digital/GjenglemtSmall.jpg" title="&quot;Gjenglemt&quot;" onclick="window.open(this.src)">
-                        <img id="image" src="./images/Photos/Digital/BuskasSmall.jpg" title="&quot;Buskas&quot;" onclick="window.open(this.src)">
+          </div>
+          <div class="gallery">
+            <div class="image-section">
+              <img
+                id="image"
+                src="./images/Photos/Digital/GjenglemtSmall.jpg"
+                title='"Gjenglemt"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+              <img
+                id="image"
+                src="./images/Photos/Digital/BuskasSmall.jpg"
+                title='"Buskas"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
 
-                        <img id="image" src="./images/Photos/Digital/KjeleSmall.jpg" title="&quot;Kjele&quot;" onclick="window.open(this.src)">
-                        <img id="image" src="./images/Photos/Digital/SkuddsoneSmall.jpg" title="&quot;Skuddsone&quot;" onclick="window.open(this.src)">
-                        <img id="image" src="./images/Photos/Digital/Stjernegata3.jpg" title="&quot;Stjernegata #3&quot;" onclick="window.open(this.src)">
-                    </div>
-                    <!--<div class="caption">
+              <img
+                id="image"
+                src="./images/Photos/Digital/KjeleSmall.jpg"
+                title='"Kjele"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+              <img
+                id="image"
+                src="./images/Photos/Digital/SkuddsoneSmall.jpg"
+                title='"Skuddsone"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+              <img
+                id="image"
+                src="./images/Photos/Digital/Stjernegata3.jpg"
+                title='"Stjernegata #3"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+            </div>
+            <!--<div class="caption">
                         <p>"Gjenglemt"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                        <img id="image" src="./images/Photos/Digital/GjenspeiletSmall.jpg" title="&quot;Gjenspeilet&quot;" onclick="window.open(this.src)">
-                        <img id="image" src="./images/Photos/Digital/SolstråleSmall.jpg" title="&quot;Solstråle&quot;" onclick="window.open(this.src)">
-                        <img id="image" src="./images/Photos/Digital/Stjernegata2.jpg" title="&quot;Stjernegata #2&quot;" onclick="window.open(this.src)">
-                        <img id="image" src="./images/Photos/Digital/SjøsykSmall.jpg" title="&quot;Sjøsyk&quot;" onclick="window.open(this.src)">
+          </div>
+          <div class="gallery">
+            <div class="image-section">
+              <img
+                id="image"
+                src="./images/Photos/Digital/GjenspeiletSmall.jpg"
+                title='"Gjenspeilet"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+              <img
+                id="image"
+                src="./images/Photos/Digital/SolstråleSmall.jpg"
+                title='"Solstråle"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+              <img
+                id="image"
+                src="./images/Photos/Digital/Stjernegata2.jpg"
+                title='"Stjernegata #2"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+              <img
+                id="image"
+                src="./images/Photos/Digital/SjøsykSmall.jpg"
+                title='"Sjøsyk"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
 
-                        <img id="image" src="./images/Photos/Digital/BeskyttendeSmall.jpg" title="&quot;Ryggstøtte&quot;" onclick="window.open(this.src)">
-
-                    </div>
-                    <!--<div class="caption">
+              <img
+                id="image"
+                src="./images/Photos/Digital/BeskyttendeSmall.jpg"
+                title='"Ryggstøtte"'
+                onclick="window.open(this.src)"
+                loading="lazy"
+              />
+            </div>
+            <!--<div class="caption">
                         <p>"Industriell"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Buskas"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Sjøsyk"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Gjenspeilet"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Jostein bw"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Kjele"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Krystallklart"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Perlemor"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Skuddsone"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Solstråle"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Stjernegata #1"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Stjernegata #2"</p>
                     </div>-->
-                </div>
-                <div class="gallery">
-                    <div class="image-section">
-                    </div>
-                    <!--<div class="caption">
+          </div>
+          <div class="gallery">
+            <div class="image-section"></div>
+            <!--<div class="caption">
                         <p>"Stjernegata #3"</p>
                     </div>-->
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- <script>
@@ -171,5 +249,5 @@
         });
     </script> -->
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
